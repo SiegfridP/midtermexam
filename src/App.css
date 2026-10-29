@@ -7,25 +7,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #add8e6;
+  background-color: #add8e6; 
 }
 
 .App {
   text-align: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.Header {
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
+/* Dark Card Container */
 .Calculator {
-  width: 340px;
+  width: 455px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px;
   background: #1e2530;
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 
@@ -33,32 +29,45 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Header Styling */
+.Header {
+  color: #ffffff; 
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Display Styling */
 .Display {
   height: 70px;
   background: #0f141c;
   color: white;
-  font-size: 23px;
+  font-size: 17px;
   font-weight: 300;
   font-family: 'Courier New', Courier, monospace;
   padding: 10px 15px;
-  text-align: right;
+  text-align: center;
   border-radius: 12px;
   margin-bottom: 20px;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   word-break: break-all;
   border: 1px solid #2a3546;
   overflow: hidden;
 }
 
+/* 3-Column Grid for Buttons */
 .Keypad {
   display: grid;
   gap: 12px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
+/* Base Button Styling (Dark Mode) */
 .Button {
   height: 60px;
   border: none;
@@ -75,26 +84,9 @@ body {
   justify-content: center;
 }
 
-
-.Keypad .Button:nth-child(4),
-.Keypad .Button:nth-child(8),
+.Keypad .Button:nth-child(10),
 .Keypad .Button:nth-child(12),
 .Keypad .Button:nth-child(16) {
   background-color: #ff9500;
   color: #ffffff;
-}
-
-.Keypad .Button:nth-child(13) {
-  background-color: #e63946;
-  color: #ffffff;
-}
-
-.Keypad .Button:nth-child(15) {
-  background-color: #00b4d8;
-  color: #ffffff;
-}
-
-.nameButton{
-  width: 295px;
-  margin-top: 15px;
 }
